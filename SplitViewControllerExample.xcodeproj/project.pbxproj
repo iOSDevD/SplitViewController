@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A0C84352673159B00996571 /* UIViewController+RefreshControllerUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0C84342673159B00996571 /* UIViewController+RefreshControllerUtilities.swift */; };
+		6A0CFE362654BBE800763B61 /* FolderFileListViewModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0CFE352654BBE800763B61 /* FolderFileListViewModelHandler.swift */; };
+		6A0D14882658827E0074B2CD /* MainFolderViewModelWithSplitStyleTripleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A0D14872658827E0074B2CD /* MainFolderViewModelWithSplitStyleTripleTests.swift */; };
+		6A0D149126589EBB0074B2CD /* MainFolderVM_fileData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A0D149026589EBB0074B2CD /* MainFolderVM_fileData.json */; };
+		6A0D149C26589FA70074B2CD /* fileData.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A0D149B26589FA70074B2CD /* fileData.json */; };
+		6A2278D3267169E20021BAFA /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2278D2267169E20021BAFA /* ViewModelFactory.swift */; };
+		6A22791A2671B9CF0021BAFA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A86D14926560B4F00564D58 /* Model.swift */; };
+		6A22791B2671BA050021BAFA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC48F7B2657313900E27535 /* DataService.swift */; };
+		6A22791C2671BA950021BAFA /* MainFolderViewModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDEB4326533C9600F2CBC7 /* MainFolderViewModelHandler.swift */; };
+		6A22791D2671BAA30021BAFA /* MainFolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC48F7226572B8200E27535 /* MainFolderViewModel.swift */; };
+		6A22791F2671BAC60021BAFA /* UISplitViewController+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A86D1432656024000564D58 /* UISplitViewController+Utilities.swift */; };
+		6A2279202671BACF0021BAFA /* SupplementaryFolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC48F8726574E4000E27535 /* SupplementaryFolderViewModel.swift */; };
+		6A5EF09D2654AC2F00016CF5 /* SupplementaryFolderViewModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5EF09C2654AC2F00016CF5 /* SupplementaryFolderViewModelHandler.swift */; };
+		6A64A47C2729203D0074920E /* OSLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A64A47B2729203D0074920E /* OSLog.framework */; };
+		6A86D1442656024100564D58 /* UISplitViewController+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A86D1432656024000564D58 /* UISplitViewController+Utilities.swift */; };
+		6A86D14A26560B4F00564D58 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A86D14926560B4F00564D58 /* Model.swift */; };
+		6AC48F7326572B8200E27535 /* MainFolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC48F7226572B8200E27535 /* MainFolderViewModel.swift */; };
+		6AC48F7C2657313900E27535 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC48F7B2657313900E27535 /* DataService.swift */; };
+		6AC48F812657314A00E27535 /* FileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC48F802657314A00E27535 /* FileDataService.swift */; };
+		6AC48F8826574E4000E27535 /* SupplementaryFolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC48F8726574E4000E27535 /* SupplementaryFolderViewModel.swift */; };
+		6AC48F9426574FBF00E27535 /* FolderFileListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC48F9326574FBF00E27535 /* FolderFileListViewModel.swift */; };
+		6AD16507269FA252005A74B3 /* MainFolderViewModelWithSplitStyleDoubleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD16506269FA252005A74B3 /* MainFolderViewModelWithSplitStyleDoubleTests.swift */; };
+		6AD1650A269FA288005A74B3 /* MockedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD16509269FA288005A74B3 /* MockedDataService.swift */; };
+		6AED59FC2651CB0400D0B380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AED59FB2651CB0400D0B380 /* AppDelegate.swift */; };
+		6AED59FE2651CB0400D0B380 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AED59FD2651CB0400D0B380 /* SceneDelegate.swift */; };
+		6AED5A032651CB0400D0B380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AED5A012651CB0400D0B380 /* Main.storyboard */; };
+		6AED5A052651CB0500D0B380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AED5A042651CB0500D0B380 /* Assets.xcassets */; };
+		6AED5A082651CB0500D0B380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AED5A062651CB0500D0B380 /* LaunchScreen.storyboard */; };
+		6AED5A132651CB0500D0B380 /* SplitViewControllerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AED5A122651CB0500D0B380 /* SplitViewControllerExampleTests.swift */; };
+		6AED5A1E2651CB0500D0B380 /* SplitViewControllerExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AED5A1D2651CB0500D0B380 /* SplitViewControllerExampleUITests.swift */; };
+		6AED5A322651D34000D0B380 /* PrimaryFolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AED5A312651D34000D0B380 /* PrimaryFolderViewController.swift */; };
+		6AED5A3E2651D34E00D0B380 /* SupplementaryFolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AED5A3D2651D34E00D0B380 /* SupplementaryFolderViewController.swift */; };
+		6AED5A462651D56B00D0B380 /* SecondaryFilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AED5A452651D56B00D0B380 /* SecondaryFilesViewController.swift */; };
+		6AEDEB4426533C9600F2CBC7 /* MainFolderViewModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEDEB4326533C9600F2CBC7 /* MainFolderViewModelHandler.swift */; };
+		6AFF15E326A3E1C30017E70E /* MainFolderViewModelWithNoFolderDataStyleTripleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF15E226A3E1C30017E70E /* MainFolderViewModelWithNoFolderDataStyleTripleTests.swift */; };
+		6AFF15E526A3E5E10017E70E /* MainFolderViewModelWithNoFolderDataStyleDoubleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF15E426A3E5E10017E70E /* MainFolderViewModelWithNoFolderDataStyleDoubleTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AED5A0F2651CB0500D0B380 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AED59F02651CB0400D0B380 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AED59F72651CB0400D0B380;
+			remoteInfo = SplitViewControllerExample;
+		};
+		6AED5A1A2651CB0500D0B380 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AED59F02651CB0400D0B380 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AED59F72651CB0400D0B380;
+			remoteInfo = SplitViewControllerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A0C84342673159B00996571 /* UIViewController+RefreshControllerUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+RefreshControllerUtilities.swift"; sourceTree = "<group>"; };
+		6A0CFE352654BBE800763B61 /* FolderFileListViewModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderFileListViewModelHandler.swift; sourceTree = "<group>"; };
+		6A0D14872658827E0074B2CD /* MainFolderViewModelWithSplitStyleTripleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFolderViewModelWithSplitStyleTripleTests.swift; sourceTree = "<group>"; };
+		6A0D149026589EBB0074B2CD /* MainFolderVM_fileData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MainFolderVM_fileData.json; path = SplitViewControllerExample/Data/MainFolderVM_fileData.json; sourceTree = SOURCE_ROOT; };
+		6A0D149B26589FA70074B2CD /* fileData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fileData.json; sourceTree = "<group>"; };
+		6A2278D2267169E20021BAFA /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
+		6A5EF09C2654AC2F00016CF5 /* SupplementaryFolderViewModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementaryFolderViewModelHandler.swift; sourceTree = "<group>"; };
+		6A64A47B2729203D0074920E /* OSLog.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSLog.framework; path = System/Library/Frameworks/OSLog.framework; sourceTree = SDKROOT; };
+		6A86D1432656024000564D58 /* UISplitViewController+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Utilities.swift"; sourceTree = "<group>"; };
+		6A86D14926560B4F00564D58 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6AC48F7226572B8200E27535 /* MainFolderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFolderViewModel.swift; sourceTree = "<group>"; };
+		6AC48F7B2657313900E27535 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		6AC48F802657314A00E27535 /* FileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDataService.swift; sourceTree = "<group>"; };
+		6AC48F8726574E4000E27535 /* SupplementaryFolderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementaryFolderViewModel.swift; sourceTree = "<group>"; };
+		6AC48F9326574FBF00E27535 /* FolderFileListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderFileListViewModel.swift; sourceTree = "<group>"; };
+		6AD16506269FA252005A74B3 /* MainFolderViewModelWithSplitStyleDoubleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFolderViewModelWithSplitStyleDoubleTests.swift; sourceTree = "<group>"; };
+		6AD16509269FA288005A74B3 /* MockedDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedDataService.swift; sourceTree = "<group>"; };
+		6AED59F82651CB0400D0B380 /* SplitViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AED59FB2651CB0400D0B380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6AED59FD2651CB0400D0B380 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6AED5A022651CB0400D0B380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6AED5A042651CB0500D0B380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AED5A072651CB0500D0B380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6AED5A092651CB0500D0B380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AED5A0E2651CB0500D0B380 /* SplitViewControllerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitViewControllerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AED5A122651CB0500D0B380 /* SplitViewControllerExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewControllerExampleTests.swift; sourceTree = "<group>"; };
+		6AED5A142651CB0500D0B380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AED5A192651CB0500D0B380 /* SplitViewControllerExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitViewControllerExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AED5A1D2651CB0500D0B380 /* SplitViewControllerExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewControllerExampleUITests.swift; sourceTree = "<group>"; };
+		6AED5A1F2651CB0500D0B380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AED5A312651D34000D0B380 /* PrimaryFolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryFolderViewController.swift; sourceTree = "<group>"; };
+		6AED5A3D2651D34E00D0B380 /* SupplementaryFolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementaryFolderViewController.swift; sourceTree = "<group>"; };
+		6AED5A452651D56B00D0B380 /* SecondaryFilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryFilesViewController.swift; sourceTree = "<group>"; };
+		6AEDEB4326533C9600F2CBC7 /* MainFolderViewModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFolderViewModelHandler.swift; sourceTree = "<group>"; };
+		6AFF15E226A3E1C30017E70E /* MainFolderViewModelWithNoFolderDataStyleTripleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFolderViewModelWithNoFolderDataStyleTripleTests.swift; sourceTree = "<group>"; };
+		6AFF15E426A3E5E10017E70E /* MainFolderViewModelWithNoFolderDataStyleDoubleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFolderViewModelWithNoFolderDataStyleDoubleTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AED59F52651CB0400D0B380 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A64A47C2729203D0074920E /* OSLog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AED5A0B2651CB0500D0B380 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AED5A162651CB0500D0B380 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A0D148F26589EAF0074B2CD /* MainFolderViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				6AD16506269FA252005A74B3 /* MainFolderViewModelWithSplitStyleDoubleTests.swift */,
+				6A0D14872658827E0074B2CD /* MainFolderViewModelWithSplitStyleTripleTests.swift */,
+				6AFF15E226A3E1C30017E70E /* MainFolderViewModelWithNoFolderDataStyleTripleTests.swift */,
+				6AFF15E426A3E5E10017E70E /* MainFolderViewModelWithNoFolderDataStyleDoubleTests.swift */,
+				6A0D149026589EBB0074B2CD /* MainFolderVM_fileData.json */,
+				6AD16509269FA288005A74B3 /* MockedDataService.swift */,
+			);
+			path = MainFolderViewModelTests;
+			sourceTree = "<group>";
+		};
+		6A2278D1267169D00021BAFA /* ViewModelFactory */ = {
+			isa = PBXGroup;
+			children = (
+				6A2278D2267169E20021BAFA /* ViewModelFactory.swift */,
+			);
+			path = ViewModelFactory;
+			sourceTree = "<group>";
+		};
+		6A64A47A2729203C0074920E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A64A47B2729203D0074920E /* OSLog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A86D14826560B3E00564D58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A86D14926560B4F00564D58 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A86D14E26560B7200564D58 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6AC48F9226574F9A00E27535 /* FolderFileList */,
+				6AC48F862657318900E27535 /* SupplementaryFolder */,
+				6AC48F852657317400E27535 /* MainFolder */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6AC48F7A265730D400E27535 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6AC48F7B2657313900E27535 /* DataService.swift */,
+				6AC48F802657314A00E27535 /* FileDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6AC48F852657317400E27535 /* MainFolder */ = {
+			isa = PBXGroup;
+			children = (
+				6AEDEB4326533C9600F2CBC7 /* MainFolderViewModelHandler.swift */,
+				6AC48F7226572B8200E27535 /* MainFolderViewModel.swift */,
+			);
+			path = MainFolder;
+			sourceTree = "<group>";
+		};
+		6AC48F862657318900E27535 /* SupplementaryFolder */ = {
+			isa = PBXGroup;
+			children = (
+				6AC48F8726574E4000E27535 /* SupplementaryFolderViewModel.swift */,
+				6A5EF09C2654AC2F00016CF5 /* SupplementaryFolderViewModelHandler.swift */,
+			);
+			path = SupplementaryFolder;
+			sourceTree = "<group>";
+		};
+		6AC48F9226574F9A00E27535 /* FolderFileList */ = {
+			isa = PBXGroup;
+			children = (
+				6AC48F9326574FBF00E27535 /* FolderFileListViewModel.swift */,
+				6A0CFE352654BBE800763B61 /* FolderFileListViewModelHandler.swift */,
+			);
+			path = FolderFileList;
+			sourceTree = "<group>";
+		};
+		6AC48F9B265750BF00E27535 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6AED5A302651D30600D0B380 /* Secondary  */,
+				6AED5A2F2651D2EB00D0B380 /* Primary */,
+				6AED5A2E2651D2E200D0B380 /* Supplementary */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6AC48FA52657521500E27535 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6A0D149B26589FA70074B2CD /* fileData.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6AED59EF2651CB0400D0B380 = {
+			isa = PBXGroup;
+			children = (
+				6AED59FA2651CB0400D0B380 /* SplitViewControllerExample */,
+				6AED5A112651CB0500D0B380 /* SplitViewControllerExampleTests */,
+				6AED5A1C2651CB0500D0B380 /* SplitViewControllerExampleUITests */,
+				6AED59F92651CB0400D0B380 /* Products */,
+				6A64A47A2729203C0074920E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6AED59F92651CB0400D0B380 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AED59F82651CB0400D0B380 /* SplitViewControllerExample.app */,
+				6AED5A0E2651CB0500D0B380 /* SplitViewControllerExampleTests.xctest */,
+				6AED5A192651CB0500D0B380 /* SplitViewControllerExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AED59FA2651CB0400D0B380 /* SplitViewControllerExample */ = {
+			isa = PBXGroup;
+			children = (
+				6A2278D1267169D00021BAFA /* ViewModelFactory */,
+				6AC48FA52657521500E27535 /* Data */,
+				6AC48F9B265750BF00E27535 /* Controllers */,
+				6AC48F7A265730D400E27535 /* Service */,
+				6A86D14E26560B7200564D58 /* ViewModel */,
+				6A86D14826560B3E00564D58 /* Model */,
+				6AEDEB54265362A000F2CBC7 /* Utilities */,
+				6AED59FB2651CB0400D0B380 /* AppDelegate.swift */,
+				6AED59FD2651CB0400D0B380 /* SceneDelegate.swift */,
+				6AED5A012651CB0400D0B380 /* Main.storyboard */,
+				6AED5A042651CB0500D0B380 /* Assets.xcassets */,
+				6AED5A062651CB0500D0B380 /* LaunchScreen.storyboard */,
+				6AED5A092651CB0500D0B380 /* Info.plist */,
+			);
+			path = SplitViewControllerExample;
+			sourceTree = "<group>";
+		};
+		6AED5A112651CB0500D0B380 /* SplitViewControllerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A0D148F26589EAF0074B2CD /* MainFolderViewModelTests */,
+				6AED5A122651CB0500D0B380 /* SplitViewControllerExampleTests.swift */,
+				6AED5A142651CB0500D0B380 /* Info.plist */,
+			);
+			path = SplitViewControllerExampleTests;
+			sourceTree = "<group>";
+		};
+		6AED5A1C2651CB0500D0B380 /* SplitViewControllerExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6AED5A1D2651CB0500D0B380 /* SplitViewControllerExampleUITests.swift */,
+				6AED5A1F2651CB0500D0B380 /* Info.plist */,
+			);
+			path = SplitViewControllerExampleUITests;
+			sourceTree = "<group>";
+		};
+		6AED5A2E2651D2E200D0B380 /* Supplementary */ = {
+			isa = PBXGroup;
+			children = (
+				6AED5A3D2651D34E00D0B380 /* SupplementaryFolderViewController.swift */,
+			);
+			path = Supplementary;
+			sourceTree = "<group>";
+		};
+		6AED5A2F2651D2EB00D0B380 /* Primary */ = {
+			isa = PBXGroup;
+			children = (
+				6AED5A312651D34000D0B380 /* PrimaryFolderViewController.swift */,
+			);
+			path = Primary;
+			sourceTree = "<group>";
+		};
+		6AED5A302651D30600D0B380 /* Secondary  */ = {
+			isa = PBXGroup;
+			children = (
+				6AED5A452651D56B00D0B380 /* SecondaryFilesViewController.swift */,
+			);
+			path = "Secondary ";
+			sourceTree = "<group>";
+		};
+		6AEDEB54265362A000F2CBC7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6A86D1432656024000564D58 /* UISplitViewController+Utilities.swift */,
+				6A0C84342673159B00996571 /* UIViewController+RefreshControllerUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AED59F72651CB0400D0B380 /* SplitViewControllerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AED5A222651CB0500D0B380 /* Build configuration list for PBXNativeTarget "SplitViewControllerExample" */;
+			buildPhases = (
+				6AED59F42651CB0400D0B380 /* Sources */,
+				6AED59F52651CB0400D0B380 /* Frameworks */,
+				6AED59F62651CB0400D0B380 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SplitViewControllerExample;
+			productName = SplitViewControllerExample;
+			productReference = 6AED59F82651CB0400D0B380 /* SplitViewControllerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6AED5A0D2651CB0500D0B380 /* SplitViewControllerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AED5A252651CB0500D0B380 /* Build configuration list for PBXNativeTarget "SplitViewControllerExampleTests" */;
+			buildPhases = (
+				6AED5A0A2651CB0500D0B380 /* Sources */,
+				6AED5A0B2651CB0500D0B380 /* Frameworks */,
+				6AED5A0C2651CB0500D0B380 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AED5A102651CB0500D0B380 /* PBXTargetDependency */,
+			);
+			name = SplitViewControllerExampleTests;
+			productName = SplitViewControllerExampleTests;
+			productReference = 6AED5A0E2651CB0500D0B380 /* SplitViewControllerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6AED5A182651CB0500D0B380 /* SplitViewControllerExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AED5A282651CB0500D0B380 /* Build configuration list for PBXNativeTarget "SplitViewControllerExampleUITests" */;
+			buildPhases = (
+				6AED5A152651CB0500D0B380 /* Sources */,
+				6AED5A162651CB0500D0B380 /* Frameworks */,
+				6AED5A172651CB0500D0B380 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AED5A1B2651CB0500D0B380 /* PBXTargetDependency */,
+			);
+			name = SplitViewControllerExampleUITests;
+			productName = SplitViewControllerExampleUITests;
+			productReference = 6AED5A192651CB0500D0B380 /* SplitViewControllerExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AED59F02651CB0400D0B380 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					6AED59F72651CB0400D0B380 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					6AED5A0D2651CB0500D0B380 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					6AED5A182651CB0500D0B380 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 6AED59F72651CB0400D0B380;
+					};
+				};
+			};
+			buildConfigurationList = 6AED59F32651CB0400D0B380 /* Build configuration list for PBXProject "SplitViewControllerExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AED59EF2651CB0400D0B380;
+			productRefGroup = 6AED59F92651CB0400D0B380 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AED59F72651CB0400D0B380 /* SplitViewControllerExample */,
+				6AED5A0D2651CB0500D0B380 /* SplitViewControllerExampleTests */,
+				6AED5A182651CB0500D0B380 /* SplitViewControllerExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AED59F62651CB0400D0B380 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AED5A082651CB0500D0B380 /* LaunchScreen.storyboard in Resources */,
+				6A0D149C26589FA70074B2CD /* fileData.json in Resources */,
+				6AED5A052651CB0500D0B380 /* Assets.xcassets in Resources */,
+				6AED5A032651CB0400D0B380 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AED5A0C2651CB0500D0B380 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0D149126589EBB0074B2CD /* MainFolderVM_fileData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AED5A172651CB0500D0B380 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AED59F42651CB0400D0B380 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A2278D3267169E20021BAFA /* ViewModelFactory.swift in Sources */,
+				6AC48F7C2657313900E27535 /* DataService.swift in Sources */,
+				6A0CFE362654BBE800763B61 /* FolderFileListViewModelHandler.swift in Sources */,
+				6AC48F812657314A00E27535 /* FileDataService.swift in Sources */,
+				6A0C84352673159B00996571 /* UIViewController+RefreshControllerUtilities.swift in Sources */,
+				6A86D1442656024100564D58 /* UISplitViewController+Utilities.swift in Sources */,
+				6AED5A3E2651D34E00D0B380 /* SupplementaryFolderViewController.swift in Sources */,
+				6AED5A462651D56B00D0B380 /* SecondaryFilesViewController.swift in Sources */,
+				6AC48F7326572B8200E27535 /* MainFolderViewModel.swift in Sources */,
+				6AED5A322651D34000D0B380 /* PrimaryFolderViewController.swift in Sources */,
+				6A5EF09D2654AC2F00016CF5 /* SupplementaryFolderViewModelHandler.swift in Sources */,
+				6AED59FC2651CB0400D0B380 /* AppDelegate.swift in Sources */,
+				6A86D14A26560B4F00564D58 /* Model.swift in Sources */,
+				6AC48F9426574FBF00E27535 /* FolderFileListViewModel.swift in Sources */,
+				6AED59FE2651CB0400D0B380 /* SceneDelegate.swift in Sources */,
+				6AC48F8826574E4000E27535 /* SupplementaryFolderViewModel.swift in Sources */,
+				6AEDEB4426533C9600F2CBC7 /* MainFolderViewModelHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AED5A0A2651CB0500D0B380 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AFF15E326A3E1C30017E70E /* MainFolderViewModelWithNoFolderDataStyleTripleTests.swift in Sources */,
+				6AD16507269FA252005A74B3 /* MainFolderViewModelWithSplitStyleDoubleTests.swift in Sources */,
+				6A22791F2671BAC60021BAFA /* UISplitViewController+Utilities.swift in Sources */,
+				6AD1650A269FA288005A74B3 /* MockedDataService.swift in Sources */,
+				6A2279202671BACF0021BAFA /* SupplementaryFolderViewModel.swift in Sources */,
+				6A22791A2671B9CF0021BAFA /* Model.swift in Sources */,
+				6A22791C2671BA950021BAFA /* MainFolderViewModelHandler.swift in Sources */,
+				6AED5A132651CB0500D0B380 /* SplitViewControllerExampleTests.swift in Sources */,
+				6A0D14882658827E0074B2CD /* MainFolderViewModelWithSplitStyleTripleTests.swift in Sources */,
+				6A22791B2671BA050021BAFA /* DataService.swift in Sources */,
+				6A22791D2671BAA30021BAFA /* MainFolderViewModel.swift in Sources */,
+				6AFF15E526A3E5E10017E70E /* MainFolderViewModelWithNoFolderDataStyleDoubleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AED5A152651CB0500D0B380 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AED5A1E2651CB0500D0B380 /* SplitViewControllerExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6AED5A102651CB0500D0B380 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AED59F72651CB0400D0B380 /* SplitViewControllerExample */;
+			targetProxy = 6AED5A0F2651CB0500D0B380 /* PBXContainerItemProxy */;
+		};
+		6AED5A1B2651CB0500D0B380 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AED59F72651CB0400D0B380 /* SplitViewControllerExample */;
+			targetProxy = 6AED5A1A2651CB0500D0B380 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6AED5A012651CB0400D0B380 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AED5A022651CB0400D0B380 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6AED5A062651CB0500D0B380 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AED5A072651CB0500D0B380 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AED5A202651CB0500D0B380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6AED5A212651CB0500D0B380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AED5A232651CB0500D0B380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				INFOPLIST_FILE = SplitViewControllerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.SplitViewControllerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6AED5A242651CB0500D0B380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				INFOPLIST_FILE = SplitViewControllerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.SplitViewControllerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6AED5A262651CB0500D0B380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SplitViewControllerExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.SplitViewControllerExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6AED5A272651CB0500D0B380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SplitViewControllerExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.SplitViewControllerExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6AED5A292651CB0500D0B380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SplitViewControllerExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.SplitViewControllerExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SplitViewControllerExample;
+			};
+			name = Debug;
+		};
+		6AED5A2A2651CB0500D0B380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SplitViewControllerExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.SplitViewControllerExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SplitViewControllerExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AED59F32651CB0400D0B380 /* Build configuration list for PBXProject "SplitViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AED5A202651CB0500D0B380 /* Debug */,
+				6AED5A212651CB0500D0B380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AED5A222651CB0500D0B380 /* Build configuration list for PBXNativeTarget "SplitViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AED5A232651CB0500D0B380 /* Debug */,
+				6AED5A242651CB0500D0B380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AED5A252651CB0500D0B380 /* Build configuration list for PBXNativeTarget "SplitViewControllerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AED5A262651CB0500D0B380 /* Debug */,
+				6AED5A272651CB0500D0B380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AED5A282651CB0500D0B380 /* Build configuration list for PBXNativeTarget "SplitViewControllerExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AED5A292651CB0500D0B380 /* Debug */,
+				6AED5A2A2651CB0500D0B380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AED59F02651CB0400D0B380 /* Project object */;
+}

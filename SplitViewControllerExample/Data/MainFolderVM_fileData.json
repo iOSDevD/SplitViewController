@@ -1,0 +1,39 @@
+[
+
+    {
+        "folderName": "test-Images",
+        "subFolder": [{
+                "folderName": "2010",
+                "fileNames": ["1.png", "2.png"]
+            },
+            {
+                "folderName": "2009",
+                "fileNames": ["3.png", "4.png"]
+            },
+            {
+                "folderName": "2008",
+                "fileNames": ["5.png", "6.png"]
+            }
+        ]
+    },
+    {
+        "folderName": "test-Text",
+        "subFolder": [{
+                "folderName": "2005",
+                "fileNames": ["2005_1.txt", "2005_2.txt"]
+            },
+            {
+                "folderName": "2009",
+                "fileNames": ["2009_1.txt", "2009_2.txt"]
+            },
+            {
+                "folderName": "2008",
+                "fileNames": ["2008_1.txt", "2008_2.txt"]
+            },
+            {
+                "folderName": "2007",
+                "fileNames": ["2007_1.txt", "2007_2.txt"]
+            }
+        ]
+    }
+]
