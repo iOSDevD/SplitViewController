@@ -55,45 +55,68 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     /// For iOS 14 or later, it configures style triple column while
     /// for iOS 14 or ealier, it configures style double column.
     func createController(){
-        let controllers = { (style: UISplitViewController.Style) -> [UIViewController] in
-            var controllers:[UIViewController] = []
-            let viewModelFactory = ViewModelFactory.shared
-            let fileService = FileDataService()
-            let viewModelStyle:SplitViewStyle = (style == .tripleColumn) ? .triple : .double
-            let viewModel = viewModelFactory.getMainFolderViewModel(dataService: fileService, style: viewModelStyle)
-            
-            let folderListViewModel = viewModelFactory.getFolderFileListViewModel(dataService: fileService)
-            
-            
-            let primaryController = PrimaryFolderViewController(viewModel: viewModel)  // Controller which helps to show main Folder structure
-            
-            controllers.append(primaryController)
-            
-            
-            if style == .tripleColumn {
-                let supplementaryViewModel = viewModelFactory.getSupplementaryFolderViewModel(dataService: fileService)
-                // Controller which helps to show the Supplementary view (ex: Subfolder)
-                let supplementaryController = SupplementaryFolderViewController(viewModel: supplementaryViewModel)
-                controllers.append(supplementaryController)
-            }
-            
-            // Controller which helps to show the file list view for a specific folder and sub folder.
-            let secondaryController = SecondaryFilesViewController(viewModel: folderListViewModel)
-            controllers.append(secondaryController)
-            
-            return controllers
-        }
+        
         
         if #available(iOS 14,*) {
             self.splitController = UISplitViewController(style: .tripleColumn)
-            self.splitController?.viewControllers = controllers(.tripleColumn)
+            self.splitController?.viewControllers = getControllersForNewStyle()
             self.splitController?.preferredDisplayMode = .twoBesideSecondary
         } else {
-            self.splitController = UISplitViewController(style: .doubleColumn)
-            self.splitController?.viewControllers = controllers(.doubleColumn)
+            self.splitController = UISplitViewController()
+            self.splitController?.viewControllers = getControllersForOldStyle()
         }
+    
         
         
+    }
+    
+    @available(iOS 14, *)
+    func getControllersForNewStyle()  -> [UIViewController] {
+        var controllers:[UIViewController] = []
+        let viewModelFactory = ViewModelFactory.shared
+        let fileService = FileDataService()
+        let viewModelStyle:SplitViewStyle =  .triple
+        let viewModel = viewModelFactory.getMainFolderViewModel(dataService: fileService, style: viewModelStyle)
+        
+        let folderListViewModel = viewModelFactory.getFolderFileListViewModel(dataService: fileService)
+        
+        
+        let primaryController = PrimaryFolderViewController(viewModel: viewModel)  // Controller which helps to show main Folder structure
+        
+        controllers.append(primaryController)
+        
+        
+        let supplementaryViewModel = viewModelFactory.getSupplementaryFolderViewModel(dataService: fileService)
+        // Controller which helps to show the Supplementary view (ex: Subfolder)
+        let supplementaryController = SupplementaryFolderViewController(viewModel: supplementaryViewModel)
+        controllers.append(supplementaryController)
+        
+        // Controller which helps to show the file list view for a specific folder and sub folder.
+        let secondaryController = SecondaryFilesViewController(viewModel: folderListViewModel)
+        controllers.append(secondaryController)
+        
+        return controllers
+    }
+    
+    func getControllersForOldStyle() -> [UIViewController] {
+        var controllers:[UIViewController] = []
+        let viewModelFactory = ViewModelFactory.shared
+        let fileService = FileDataService()
+        let viewModelStyle:SplitViewStyle = .double
+        let viewModel = viewModelFactory.getMainFolderViewModel(dataService: fileService, style: viewModelStyle)
+        
+        let folderListViewModel = viewModelFactory.getFolderFileListViewModel(dataService: fileService)
+        
+        
+        let primaryController = PrimaryFolderViewController(viewModel: viewModel)  // Controller which helps to show main Folder structure
+        
+        controllers.append(UINavigationController.init(rootViewController: primaryController))
+        
+        // Controller which helps to show the file list view for a specific folder and sub folder.
+        let secondaryController = SecondaryFilesViewController(viewModel: folderListViewModel)
+        controllers.append(UINavigationController.init(rootViewController: secondaryController))
+        
+        return controllers
     }
 }
 

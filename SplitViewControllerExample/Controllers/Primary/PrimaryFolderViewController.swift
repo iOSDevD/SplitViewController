@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import os
 
 class PrimaryFolderViewController: UIViewController {
 
@@ -91,10 +90,8 @@ extension PrimaryFolderViewController: UITableViewDataSource {
 // MARK: - Implement UITableViewDelegate
 extension PrimaryFolderViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let logger = Logger()
         switch self.viewModel.itemSelected(at: indexPath) {
         case let (folder?,subFolder?):  // When both folder and File list is available, mainly prior to iOS 14. It updates the file list controller
-            logger.debug("Folder SubFolder Handling \(folder),\(subFolder)")
             self.getFolderFilesUpdatable()?.reloadFileList(for: folder, subFolder: subFolder)
         case let(folder?,nil): // When only folder is avaialble, new triple column support. It updates the supplementary controller.
             print("Folder Handling \(folder)")
